@@ -1,0 +1,15 @@
+[package]
+name = "traffy_downloader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+futures = "0.3.28"
+reqwest = { version = "0.11.17", features = ["json"] }
+serde = { version = "1.0.160", features = ["serde_derive"] }
+serde_json = "1.0.96"
+tokio = { version = "1.28.0", features = ["macros", "rt-multi-thread"] }
+tokio-utils = "0.1.2"
